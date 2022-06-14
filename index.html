@@ -1,9 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta http-equiv="Refresh" content="0; url=http://homepages.inf.ed.ac.uk/s1894023/" />
-  </head>
-  <body>
-    <p>Please follow <a href="http://homepages.inf.ed.ac.uk/s1894023/">this link</a>.</p>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<title>Christof Schlaak</title>
+	<meta name="description" content="About Me Site">
+    <meta name="author" content="Christof Schlaak">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css?v=1.0">
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+</head>
+<body>
+	<div class="topbar">
+		<div class="topbarnav">
+			<a id="infolink" href="#info"><b>info</b></a>
+			<a id="backgroundlink" href="#background"><b>background</b></a>
+			<a id="interestslink" href="#interests"><b>reseach interests</b></a>
+			<a id="talkslink" href="#talks"><b>talks</b></a>
+			<a id="publicationslink" href="#publications"><b>publications</b></a>
+		</div>
+		<div class="topburgernav">
+			<input type="checkbox" id="burgermenu"/><label for="burgermenu"></label>
+	
+			<div class="burgermenu">
+				<a href="#info" onclick="document.getElementById('burgermenu').checked = false;">info</a><br/>
+				<a href="#background" onclick="document.getElementById('burgermenu').checked = false;">background</a><br/>
+				<a href="#interests" onclick="document.getElementById('burgermenu').checked = false;">research interests</a><br/>
+				<a href="#talks" onclick="document.getElementById('burgermenu').checked = false;">talks</a><br/>
+				<a href="#publications" onclick="document.getElementById('burgermenu').checked = false;">publications</a><br/>
+			</div>
+		</div>
+	</div>
+
+	<div class="pagespacing"></div>
+	<div class="pagespacing"></div>
+
+	<div id="info" class="page">
+        <h1>Hi! <a class="fancyinitials" content="I &#x2665; Computer Science"><span>I'm Christof Schlaak,</a></span></h1>
+        <div style="float: left; margin-right: 40px; text-align: center;">
+            <img src="img/christof.png" border="3px">
+            <br/>
+            <a class="cv-link" href="dl/cv.pdf" target="_blank">CV</a>
+        </div>
+        <div style="text-align: justify"><span class="nobr"> a fourth year</span> PhD student at the Institute for Computing Systems Architecture (<a href="http://web.inf.ed.ac.uk/icsa" target="_blank">ICSA</a>) at the University of Edinburgh. I'm working on <i>a functional language for high-level synthesis of hardware accelerators</i> (<a href="http://www.lift-project.org/fpga" target="_blank">read more</a>). I am a member of the Compiler and Architecture Design (<a href="http://www.icsa.informatics.ed.ac.uk/compilers/" target="_blank">CArD</a>) group. My research is supervised by <a href="https://cdubach.bitbucket.io" target="_blank">Christophe Dubach</a> from McGill University and <a href="https://www.microsoft.com/en-us/research/people/aasmith/" target="_blank">Aaron Smith</a> (MSR) and is supported with a PhD scholarship by Microsoft Research.</div>
+        <ul style="display: inline-block; margin-bottom: 0;list-style: none; text-indent: -1.3em;">
+            <li>&#x1F4E7; christof.schlaak (a t) ed.ac.uk</li>
+            <li>&#x1F4CD; University of Edinburgh,<br/><a href="https://www.ed.ac.uk/maps/maps?building=informatics-forum" target="_blank">Informatics Forum</a>, room 1.05/2</li>
+            <li><img src="img/github.png"> <a href="https://github.com/cschlaak" target="_blank">github.com/cschlaak</a></li>
+            <li><img src="img/dblp.png"> <a href="https://dblp.uni-trier.de/pers/hd/s/Schlaak:Christof" target="_blank">dblp.uni-trier.de</a></li>
+		</ul>
+	</div>
+
+	<div class="pagespacing"></div>
+
+	<div id="background" class="page">
+		<h1>background</h1>
+        <table>
+            <tr><td style="font-size: x-large">&#x1F393;</td><td>2014</td><td>|</td><td>B.Sc. Informatics in Oldenburg, Germany</td></tr>
+            <tr><td style="font-size: x-large">&#x1F393;</td><td>2016</td><td>|</td><td>M.Sc. Informatics with focus on embedded systems in Oldenburg, Germany</td></tr>
+            <tr><td style="font-size: x-large">&#x1F50D;</td><td>2018</td><td>|</td><td>Researcher at <a href="https://www.offis.de/en" target="_blank">OFFIS</a> - Institute for Information Technology in the group Safety &amp; Security Oriented Design Methods &amp; Processes </td></tr>
+            <tr><td style="font-size: x-large">&#x1F4DD;</td><td>now</td> <td>|</td><td>PhD under construction &hellip;</td></tr>
+        </table>
+	</div>
+
+	<div class="pagespacing"></div>
+
+	<div id="interests" class="page">
+		<h1>research interests</h1>
+		<br/>
+		<center>
+			<img class="mobileimage" src="img/interests.png" alt="FPGA, concurrency, high-performance computing, performance portability, low-power computing, code generation, high-level programming, compiler, hardware design, neural networks"/>
+		</center>
+	</div>
+
+	<div class="pagespacing"></div>
+
+	<div id="talks" class="page">
+		<h1>talks</h1>
+		<ul>
+            <li><b>Functional Languages for High-Level Synthesis</b><br/>
+                (Apr 11, 2022)<br/>
+                <i>Invited lecture for the Computer Architecture course (ECSE 425, Winter 2022) of Prof. Amin Emad at McGill University in Montreal, Canada.</i><br/><br/>
+			</li>
+            <li><a href="dl/posters/SchlaakGoogleSummit2019.pdf" target="_blank"><b>High-level Synthesis of Neural Networks for FPGAs with Lift&emsp;&#x1f5ce;</b></a><br/>
+                (Dec 9-11, 2019)<br/>
+                <i>Poster at Google's 7th Compiler and Programming Language Summit 2019 in Munich, Germany.</i><br/><br/>
+			</li>
+            <li><b>Synthesising Neural Networks on FPGAs with Lift</b><br/>
+                (Sep 20, 2019)<br/>
+                <i>Talk at the Facebook AI Systems Faculty Summit 2019 at Facebook HQ in Menlo Park, CA, United States.</i><br/><br/>
+			</li>
+            <li><a href="dl/posters/SchlaakHiPEAC2019.pdf" target="_blank"><b>High-level Synthesis of Neural Networks for FPGAs with Lift&emsp;&#x1f5ce;</b></a><br/>
+                (Jul 14-20, 2019)<br/>
+                <i>Poster at the <a href="http://acaces.hipeac.net/2019/" target="_blank">Fifteenth International Summer School on Advanced Computer Architecture and Compilation for High-Performance and Embedded Systems (ACACES 2019)</a> in Fiuggi, Italy.</i><br/><br/>
+			</li>
+            <li><a href="dl/posters/SchlaakHiPEAC2019.pdf" target="_blank"><b>High-level Synthesis of Neural Networks for FPGAs with Lift&emsp;&#x1f5ce;</b></a><br/>
+                (Apr 16-18, 2019)<br/>
+                <i>Lightning talk and poster at the <a href="https://www.hipeac.net/csw/2019/edinburgh" target="_blank">HiPEAC Computer Systems Week (CSW) Spring 2019</a> in Edinburgh, United Kingdom.</i>
+			</li>
+		</ul>
+
+	</div>
+
+	<div class="pagespacing"></div>
+
+	<div id="publications" class="page">
+		<h1>publications</h1>
+		2022
+		<ul>
+			<li><a href="https://dl.acm.org/doi/pdf/10.1145/3501768" target="_blank"><b>Memory-Aware Functional IR for Higher-Level
+Synthesis of Accelerators&emsp;&#x1f5ce;</b></a><br/>
+				<i>Christof Schlaak, Tzung-Han Juang and Christophe Dubach</i><br/>
+                <a href="https://dl.acm.org/toc/taco/2022/19/2" target="_blank"><small>ACM Transactions on Architecture and Code Optimization (TACO), Vol. 19, No. 2, Article 16.</small></a>
+			</li>
+		</ul>
+		<br/>
+		2018
+		<ul>
+			<li><a href="http://ceur-ws.org/Vol-2066/seerts2018paper04.pdf" target="_blank"><b>Design Validation for Embedded Multi-core Systems in the Context of ISO 26262&emsp;&#x1f5ce;</b></a><br/>
+				<i>Benedikt Bauer, Jan Steffen Becker, Thomas Peikenkamp, Christof Schlaak and Ingo Stierand</i><br/>
+				<a href="https://se18.uni-ulm.de/workshops" target="_blank"><small>Workshop on Software Engineering for Applied Embedded RealTime Systems (SEERTS).</small></a>
+			</li>
+		</ul>
+		<br/>
+		2017
+		<ul>
+			<li><a href="https://arxiv.org/pdf/1701.03709.pdf" target="_blank"><b>Power and Execution Time Measurement Methodology for SDF Applications on FPGA-based MPSoCs&emsp;&#x1f5ce;</b></a><br/>
+				<i>Christof Schlaak, Maher Fakih and Ralf Stemmer</i><br/>
+				<a href="https://www.hipeac.net/2017/stockholm/" target="_blank"><small>Proceedings of the Workshop on High Performance Energy Efficient Embedded Systems (HIP3ES). Collocated with HIPEAC 2017 Conference.</small></a>
+			</li>
+		</ul>
+
+	</div>
+
+	<div class="pagespacing"></div>
+
+</body>
 </html>

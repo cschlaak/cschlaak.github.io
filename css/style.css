@@ -1,0 +1,186 @@
+/*
+ * General
+ */
+
+@font-face {
+	font-family: myFont;
+	src: url(../fonts/Raleway-Light.ttf);
+}
+
+@viewport {
+	zoom: 1.0;
+	width: device-width;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: myFont;
+	background-color: #023;
+	color: #EFE;
+}
+
+span.nobr {
+	white-space: nowrap
+}
+
+a:link, a:visited {
+	color: #EFE;
+}
+a:hover, a:active {
+	color: #2AE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: -4px 0 32px 0;
+}
+
+li {
+	margin-bottom: 0.4em;
+}
+
+td {
+	padding: 0.1em;
+}
+
+/*
+ * navigation
+ */
+
+.topbar {
+	position: fixed;
+	top: 0;
+	height: 40px;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.8;
+	z-index: 1;
+}
+
+.topbar a {
+	color: #2AE;
+	margin-right: 36px;
+	text-decoration:none;
+}
+
+.topbar a:hover {
+	border-bottom: 3px solid #EFE;
+}
+
+.topbarnav {
+	width: 600px;
+	margin: 10px auto;
+}
+
+/*
+ * Burgermenu
+ */
+
+.topburgernav {
+	display: none;
+}
+
+.topburgernav input[type=checkbox] {
+	display: none;
+}
+
+.topburgernav .burgermenu {
+	display: none;
+	position: fixed;
+	margin-top: 40px;
+	padding: 40px;
+	background-color: #000;
+	z-index: 1;
+}
+
+.topburgernav input[type=checkbox] + label {
+	position: fixed;
+	top: 8px;
+	left: 8px;
+	background-image: url('../img/burgermenu.png');
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+}
+
+.topburgernav input[type=checkbox]:checked + label {
+	background-image: url('../img/burgermenu_active.png');
+	display: inline-block;
+	padding: 0 0 0 0px
+}
+
+.topburgernav input[type=checkbox]:checked ~ .burgermenu {
+	display: initial; /* show menu, when burger was clicked */
+}
+
+/*
+ * Pages
+ */
+
+.page {
+	width: 600px;
+	background-color: #356;
+	padding: 40px;
+	margin: auto;
+}
+
+.pagespacing {
+	height: 40px;
+}
+
+#talks a, #publications a {
+	text-decoration:none;
+}
+
+#talks a:hover, #publications a:hover {
+	text-decoration:underline;
+}
+
+a.fancyinitials {
+	color: #EFE;
+}
+
+a.fancyinitials:hover:before {
+	content: attr(content); 
+}
+
+a.fancyinitials:hover span {
+	font-size: 0;
+}
+
+a.cv-link:link, a.cv-link:visited {
+	text-decoration:none;
+	display: inline-block;
+	padding: 4px 14px;
+	margin: 24px;
+	border-radius: 10px;
+	border: 3px solid #EFE;
+	background-color: #EFE;
+	font-size: x-large;
+	font-weight: bold;
+	color: #2AE;
+}
+
+a.cv-link:hover, a.cv-link:active {
+	color: #EFE;
+	background-color: #2AE;
+}
+
+/*
+ * Mobile
+ */
+
+@media only screen and (max-width: 1024px) {
+	.topbarnav {
+		display: none;
+	}
+	.topburgernav {
+		display: initial;
+	}
+	.page {
+		width: 80%;
+	}
+	.mobileimage {
+		width: 70%;
+	}
+}
